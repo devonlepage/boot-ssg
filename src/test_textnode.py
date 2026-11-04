@@ -26,7 +26,7 @@ class TestTextNode(unittest.TestCase):
         
     def test_repr(self):
         hi = TextNode("Hi Mom!", TextType.TEXT)
-        self.assertEqual(print(hi), print("TextNode(Hi Mom!, text, None)"))
+        self.assertEqual(hi.__repr__(), "TextNode(Hi Mom!, text, None)")
 
 if __name__ == "__main__":
     unittest.main()
